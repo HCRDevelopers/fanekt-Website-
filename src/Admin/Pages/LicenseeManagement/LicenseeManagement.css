@@ -1,0 +1,249 @@
+/* LicenseeManagement.css */
+
+.licensee-management-container {
+  margin-left: 290px;
+  padding: 16px;
+  padding-top: 120px;
+}
+
+.licensee-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.licensee-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.licensee-header p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff8b;
+  margin: 0;
+}
+
+.licensee-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.licensee-actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #1d4ed8, #7c3aed);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #1e40af, #6b21a8);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(30, 64, 175, 0.4);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.btn-secondary:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.licensee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.licensee-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.licensee-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.licensee-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.licensee-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.licensee-type {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.licensee-actions-card {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.licensee-actions-card button {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.licensee-actions-card button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Page Styles */
+.licensee-management-page {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.licensee-page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.licensee-page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.licensee-page-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff8b;
+  margin: 0;
+}
+
+.licensee-page-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.licensee-page-content {
+  overflow-x: auto;
+}
+
+.licensee-page-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.licensee-page-table th {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+.licensee-page-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.licensee-page-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .licensee-management-container {
+    margin-left: 0;
+    padding: 12px;
+    padding-top: 100px;
+  }
+
+  .licensee-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .licensee-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .licensee-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .licensee-page-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
