@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Hide scrollbar for webkit browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+.btn-gradient {
+  background:
+    linear-gradient(#4b425b, #4b425b) padding-box,
+    linear-gradient(60deg, #155BF2, #B657B1) border-box;
+  border: 1px solid transparent;
+}
+
+
+
+.btn-gradient-blue {
+  background:
+    linear-gradient(#232b4a, #232b4a) padding-box,
+    linear-gradient(to bottom left,
+      #FFFFFF68 20%,
+      #1585F2 50%,
+      #FFFFFF68 100%) border-box;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.btn-gradient-white {
+  background:
+    linear-gradient(#1585F2, #1585F2) padding-box,
+    linear-gradient(to bottom left,
+      #FFFFFF68 20%,
+      #1585F2 50%,
+      #FFFFFF68 100%) border-box;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.btn-gradient-blue2 {
+  background:
+    linear-gradient(#424f73, #424f73) padding-box,
+    linear-gradient(to bottom left,
+      #FFFFFF68 20%,
+      #1585F2 50%,
+      #FFFFFF68 100%) border-box;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.btn-gradient-blue3 {
+  background:
+    linear-gradient(#544b64, #544b64) padding-box,
+    linear-gradient(to bottom left,
+      #FFFFFF68 20%,
+      #1585F2 50%,
+      #FFFFFF68 100%) border-box;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
